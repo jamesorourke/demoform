@@ -1,0 +1,103 @@
+.2020-09-18 15:15:50,945 ERROR: Exception on /census [GET] [in c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\routes.py", line 111, in census
+    return render_template('census.html', title='Census', form=form)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\census.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\census.html", line 10, in block "content"
+    {{ form.username(size=32) }}<br>
+jinja2.exceptions.UndefinedError: 'app.forms.CensusForm object' has no attribute 'username'
+.2020-09-18 15:28:42,310 ERROR: Exception on /census [GET] [in c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\routes.py", line 111, in census
+    return render_template('census.html', title='Census', form=form)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\census.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\census.html", line 10, in block "content"
+    {{ form.username(size=32) }}<br>
+jinja2.exceptions.UndefinedError: 'app.forms.CensusForm object' has no attribute 'username'
+.2020-09-18 15:29:38,714 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 15:31:16,991 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 16:19:13,074 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 16:41:45,001 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 16:42:04,073 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 16:42:10,584 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 16:42:14,358 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-21 09:05:11,501 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-21 09:26:19,635 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-21 09:26:24,222 ERROR: Exception on /census [GET] [in c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\routes.py", line 106, in census
+    if current_user.is_authenticated():
+TypeError: 'bool' object is not callable
+.2020-09-21 09:27:10,841 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-21 09:28:18,809 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-21 09:28:48,431 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-21 09:30:02,588 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-21 09:31:07,442 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]

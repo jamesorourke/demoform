@@ -1,0 +1,91 @@
+.2020-09-18 14:31:56,652 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 14:40:36,824 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 15:12:32,283 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 15:12:36,934 ERROR: Exception on /index [GET] [in c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\routes.py", line 27, in index
+    return render_template('index.html', title='Home', user=User, census=Census)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\base.html", line 16, in template
+    <a href="{{url_for('census'}}"
+jinja2.exceptions.TemplateSyntaxError: unexpected '}', expected ')'
+.2020-09-18 15:13:08,452 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 15:13:14,373 ERROR: Exception on / [GET] [in c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\routes.py", line 27, in index
+    return render_template('index.html', title='Home', user=User, census=Census)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\templates\base.html", line 16, in template
+    <a href="{{url_for('census'}}">Census</a>
+jinja2.exceptions.TemplateSyntaxError: unexpected '}', expected ')'
+.2020-09-18 15:13:28,989 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
+.2020-09-18 15:13:33,892 ERROR: Exception on /census [GET] [in c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\jameso'rourke\pycharmprojects\demoform\venv\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+.2020-09-18 15:15:42,337 INFO: DemoForm Startup [in C:\Users\JamesO'Rourke\PycharmProjects\demoform\app\__init__.py:41]
