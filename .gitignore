@@ -2,5 +2,3 @@ __pycache__/
 logs/
 *.log
 app.db
-app.db
-*.log
